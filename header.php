@@ -60,7 +60,7 @@
 
 				<div class="header-left">
 					<a href="<?php echo home_url(); ?>" rel="nofollow">
-						<img src="<?php echo get_template_directory_uri(); ?>/library/images/logo.png" id="logo" class="h1" itemscope itemtype="http://schema.org/Organization">
+						<img src="<?php if(is_page(2)) : echo get_template_directory_uri().'/library/images/logo.png'; else : echo get_template_directory_uri().'/library/images/logo_internal.png'; endif; ?>" id="logo" class="h1" itemscope itemtype="http://schema.org/Organization">
 					</a>
 				</div>
 

@@ -1,5 +1,5 @@
 /*********************
-LAYOUT & GRID STYLES
+LAYOU & GRID STYLES
 *********************/
 
 .wrap {
@@ -70,6 +70,28 @@ Footer Section
     &:nth-child(4),
     &:nth-child(5) {
       width: 50%;
+    }
+  }
+}
+
+/****************************
+Education Section
+****************************/
+.education {
+  .top {
+    .content {
+      width: 40%;
+    }
+    .image {
+      width: 60%;
+    }
+  }
+
+  .table-section {
+    .table {
+      .table-container {
+        overflow: hidden;
+      }
     }
   }
 }

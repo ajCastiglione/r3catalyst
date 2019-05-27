@@ -14,8 +14,12 @@ LAYOUT & GRID STYLES
 Header section
 *********************/
 
-#inner-header {
+.home #inner-header {
   border-bottom: 1px solid $white;
+}
+
+#inner-header {
+  border-bottom: 1px solid $primary;
 }
 
 .header-left {
@@ -36,7 +40,6 @@ Header section
       font-size: 18px;
       &:hover,
       &:focus {
-        color: darken($blue, 10%);
       }
     }
     &:first-child {
@@ -192,9 +195,5 @@ SIDEBARS & ASIDES
 }
 
 /****************************
-Sidebar Section
+Education Section
 ****************************/
-
-.sidebar {
-  margin: 0;
-}

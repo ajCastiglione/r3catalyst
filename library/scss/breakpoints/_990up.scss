@@ -13,3 +13,57 @@ Home Section
     margin-top: 0;
   }
 }
+
+/****************************
+Education Section
+****************************/
+.education {
+  .top {
+    justify-content: space-between;
+    .content {
+      width: 50%;
+    }
+    .image {
+      width: 50%;
+      text-align: right;
+      .img {
+        max-height: 420px;
+        max-width: 900px;
+      }
+    }
+  }
+
+  // timeline
+  .middle {
+    .timeline {
+      .title {
+        font-size: 55px;
+      }
+    }
+  }
+
+  // Table section
+  .table-section {
+    .table {
+      .title {
+        font-size: 55px;
+      }
+    }
+  }
+
+  // Case studies
+  .case-studies-section {
+    .title {
+      font-size: 55px;
+    }
+    .content,
+    .image {
+      width: 50%;
+      .text {
+      }
+    }
+    .image {
+      text-align: right;
+    }
+  }
+}

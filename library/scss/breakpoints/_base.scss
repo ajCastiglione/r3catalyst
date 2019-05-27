@@ -97,7 +97,6 @@ POSTS & CONTENT STYLES
   background-color: transparent;
   margin-bottom: 1.5em;
   header {
-    padding: 1.5em;
   }
   footer {
     padding: 1.5em;
@@ -240,7 +239,7 @@ html {
 }
 
 body {
-  font-family: $main;
+  font-family: $lato;
   line-height: 1.5;
   color: $black;
   background-color: $white;
@@ -266,6 +265,24 @@ body {
       color: $black;
     }
   }
+}
+
+.home .page {
+  .entry-content {
+    padding: inherit;
+  }
+}
+
+.page {
+  .entry-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.page-title {
+  font-weight: 300;
+  text-transform: capitalize;
 }
 
 /****************************
@@ -302,13 +319,25 @@ Header Section
 
 // Nav styles
 
+.home .nav {
+  li {
+    a {
+      color: $white;
+      &:hover,
+      &:focus {
+        border-bottom-color: $secondary;
+      }
+    }
+  }
+}
+
 .nav {
   border-bottom: 0;
   margin: 0;
   li {
     a {
       display: block;
-      color: $white;
+      color: $black;
       text-decoration: none;
       text-transform: uppercase;
       font-size: 15px;
@@ -317,7 +346,10 @@ Header Section
       transition: all 0.3s ease-in-out;
       &:hover,
       &:focus {
-        border-bottom-color: $blue;
+        color: $secondary;
+        border-bottom: 2px solid $primary;
+        background: none;
+        transform: none;
       }
     }
     &:first-child {
@@ -348,6 +380,7 @@ Header Section
   li.current_page_item,
   li.current_page_ancestor {
     a {
+      border-bottom-color: $primary;
     }
   }
   /* end current highlighters */
@@ -492,6 +525,9 @@ Footer Section
   }
 
   .footer-news {
+    h3 {
+      margin-top: 0;
+    }
     .dummy-fields {
       position: relative;
       input[type="text"] {
@@ -533,5 +569,234 @@ Footer Section
 
   a {
     color: $white;
+  }
+}
+
+/****************************
+Education Section
+****************************/
+.education {
+  // education content
+
+  .section {
+    padding: 0 8px;
+  }
+
+  .top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    .content,
+    .image {
+      padding: 0 1rem;
+    }
+
+    .content {
+      .title {
+        color: $primary;
+        font-size: 22px;
+        margin: 10px 0;
+      }
+    }
+
+    .image {
+      .img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin: 0;
+      }
+    }
+  }
+
+  // timeline section
+  .middle {
+    margin-top: 3.5rem;
+    background-color: $primary;
+
+    .timeline {
+      color: $white;
+      padding: 3rem 1rem;
+
+      .title {
+        font-weight: 300;
+        text-align: center;
+        font-size: 45px;
+        margin: 0;
+      }
+      .text {
+        text-align: center;
+        color: $black;
+        font-size: 16px;
+        margin-bottom: 1.5rem;
+      }
+
+      .timeline-post {
+        background: none !important;
+        box-shadow: none !important;
+        border: none !important;
+        text-align: center;
+      }
+      .custom_story_lbl {
+        color: $white;
+        font-size: 22px;
+        font-weight: bold;
+      }
+      .content-title {
+        font-weight: bold;
+        display: none;
+      }
+      .content-details {
+        color: $black;
+        font-size: 16px !important;
+      }
+      .slick-slide::before {
+        background: $white !important;
+      }
+      .ctl-slick-prev {
+        left: -20px;
+      }
+      .ctl-slick-next {
+        right: -20px;
+      }
+    }
+  }
+
+  // Table section
+  .table-section {
+    margin-top: 4rem;
+    .table {
+      .title {
+        color: $primary;
+        font-size: 40px;
+        text-align: center;
+        font-weight: 300;
+      }
+      .text {
+        text-align: center;
+        font-size: 16px;
+      }
+
+      .table-container {
+        overflow: auto;
+        max-height: 650px;
+      }
+
+      table {
+        min-width: 400px;
+      }
+
+      // table SC
+      thead {
+        .column-1 {
+          visibility: hidden;
+        }
+        th {
+          background-color: $primary;
+          color: $white;
+          font-size: 25px;
+          text-align: center;
+          font-weight: 300;
+        }
+      }
+      tbody {
+        .column-1 {
+          background-color: $primary;
+          color: $white;
+          font-size: 18px;
+        }
+        tr:nth-child(even) {
+          .column-1 {
+            background-color: $white;
+            color: $black;
+          }
+        }
+        tr td {
+          border: 2px solid $primary;
+        }
+      }
+    }
+  }
+
+  // Case studies
+  .case-studies-section {
+    margin-top: 4rem;
+
+    .title {
+      color: $primary;
+      font-size: 40px;
+      font-weight: 300;
+      text-align: center;
+    }
+
+    .text {
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: stretch;
+      justify-content: center;
+    }
+
+    .content {
+      width: 100%;
+      .title {
+        font-size: 24px;
+        text-align: left;
+      }
+      .text {
+        font-size: 16px;
+        text-align: left;
+        font-weight: 400;
+      }
+    }
+    .image {
+      width: 100%;
+      text-align: center;
+      .img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .table {
+      margin-top: 2rem;
+      .title {
+        color: $secondary;
+        text-align: left;
+        font-size: 30px;
+      }
+      thead th {
+        background-color: $primary;
+        color: $white;
+        text-align: center;
+        font-size: 28px;
+        border: 2px solid $primary;
+      }
+      tbody td {
+        border: 2px solid $primary;
+      }
+    }
+    .disclaimer {
+      font-size: 12px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .conclusion {
+      .subtitle {
+        color: $primary;
+        text-transform: capitalize;
+      }
+      .content {
+        font-size: 16px;
+      }
+    }
   }
 }
