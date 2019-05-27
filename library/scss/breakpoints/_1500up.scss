@@ -25,3 +25,26 @@ Home Section
     font-size: 19px;
   }
 }
+
+/****************************
+Footer Section
+****************************/
+
+.footer {
+  #inner-footer {
+    text-align: left;
+  }
+  .footer-item {
+    width: 20%;
+    padding: 0 1.5rem;
+    &:nth-child(4),
+    &:nth-child(5) {
+      width: 20%;
+      text-align: left;
+    }
+  }
+
+  .footer-logo {
+    text-align: center;
+  }
+}

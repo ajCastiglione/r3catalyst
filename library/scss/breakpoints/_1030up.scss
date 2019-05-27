@@ -35,3 +35,16 @@ Header section
 /****************************
 Home Section
 ****************************/
+
+/****************************
+Footer Section
+****************************/
+.footer {
+  .footer-item {
+    width: 33%;
+    &:nth-child(4),
+    &:nth-child(5) {
+      width: 50%;
+    }
+  }
+}

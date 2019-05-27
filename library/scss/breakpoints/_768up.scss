@@ -155,6 +155,22 @@ Home Section
   }
 }
 
+/****************************
+Footer Section
+****************************/
+.footer {
+  #inner-footer {
+    justify-content: space-between;
+  }
+  .footer-item {
+    width: 50%;
+    &:nth-child(5) {
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
+
 /*********************
 SIDEBARS & ASIDES
 *********************/

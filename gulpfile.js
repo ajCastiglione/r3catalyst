@@ -66,7 +66,7 @@ gulp.task("watch-scss", ["compile", "min-images", "compile-login"], () => {
     injectChanges: true,
     files: all
   });
-  gulp.watch(scss, ["compile", "compile-login"]);
+  gulp.watch(scss, ["compile", "compile-login", "min-images"]);
 });
 
 // Start the process

@@ -19,6 +19,7 @@ Header Section
 
 .header-left {
   width: 35%;
+  text-align: left;
 }
 
 .header-right {
@@ -57,5 +58,18 @@ Home Section
 
   .home-image {
     width: 40%;
+  }
+}
+
+/****************************
+Footer Section
+****************************/
+.footer {
+  .footer-item {
+    width: 33%;
+    &:nth-child(4),
+    &:nth-child(5) {
+      width: 50%;
+    }
   }
 }
