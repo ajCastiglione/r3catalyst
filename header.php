@@ -38,7 +38,8 @@
 	<!--external stylesheets / fonts / etc...-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-	    crossorigin="anonymous">
+			crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
 
 	<?php // wordpress head functions ?>
 	<?php wp_head(); ?>
@@ -55,15 +56,15 @@
 
 		<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 
-			<div id="inner-header" class="wrap cf">
+			<div id="inner-header" class="large-wrapper cf">
 
-				<div class="header-left col-xs-12 col-sm-6 col-lg-4">
+				<div class="header-left">
 					<a href="<?php echo home_url(); ?>" rel="nofollow">
-						<img src="" id="logo" class="h1" itemscope itemtype="http://schema.org/Organization">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/logo.png" id="logo" class="h1" itemscope itemtype="http://schema.org/Organization">
 					</a>
 				</div>
 
-				<div class="header-right col-xs-12 col-sm-6 col-lg-8">
+				<div class="header-right">
 					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
 						<?php wp_nav_menu(array(
 									'container' => false,                           // remove nav container
@@ -82,5 +83,9 @@
 				</div>
 
 			</div>
+
+			<?php if(is_page(2)) : ?>
+				<?php get_template_part('partials/header', 'home'); ?>
+			<?php endif;?>
 
 		</header>

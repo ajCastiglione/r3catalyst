@@ -8,3 +8,26 @@ LAYOUT & GRID STYLES
 .large-wrapper {
   width: 80%;
 }
+
+/*********************
+Header section
+*********************/
+
+// Banner section
+.banner {
+  .content {
+    width: 60%;
+  }
+
+  .title {
+    font-size: 45px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+
+  .img {
+    width: 40%;
+  }
+}

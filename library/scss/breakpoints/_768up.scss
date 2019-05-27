@@ -11,8 +11,18 @@ LAYOUT & GRID STYLES
 }
 
 /*********************
-NAVIGATION STYLES
+Header section
 *********************/
+
+#inner-header {
+  border-bottom: 1px solid $white;
+}
+
+.header-left {
+  padding-bottom: 1rem;
+}
+
+// Nav styles
 
 .nav {
   border: 0;
@@ -23,6 +33,7 @@ NAVIGATION STYLES
   li {
     display: inline-block;
     a {
+      font-size: 18px;
       &:hover,
       &:focus {
         color: darken($blue, 10%);
@@ -99,6 +110,34 @@ NAVIGATION STYLES
 }
 
 /* end .nav */
+
+// Banner section
+.banner {
+  .inner-banner {
+    justify-content: space-between;
+  }
+
+  .content {
+    width: 65%;
+    max-width: 700px;
+    padding-right: 12px;
+    text-align: left;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+
+  .img {
+    display: block;
+    text-align: right;
+    width: 35%;
+  }
+}
 
 /*********************
 SIDEBARS & ASIDES

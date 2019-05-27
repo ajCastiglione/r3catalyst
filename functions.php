@@ -68,6 +68,11 @@ function bones_ahoy() {
 // let's get this party started
 add_action( 'after_setup_theme', 'bones_ahoy' );
 
+// Turn on ACF options page
+if( function_exists('acf_add_options_page') ) {
+	acf_add_options_page();
+}
+
 /************* LOGIN PAGE STYLES  *************/
 
 function my_admin_theme_style() {

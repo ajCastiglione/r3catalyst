@@ -83,61 +83,6 @@ h5,
 }
 
 /*********************
-NAVIGATION STYLES
-*********************/
-
-.nav {
-  border-bottom: 0;
-  margin: 0;
-  li {
-    a {
-      display: block;
-      color: $blue;
-      text-decoration: none;
-      padding: 0.75em;
-      border-bottom: 2px solid transparent;
-      transition: all 0.3s ease-in-out;
-      &:hover,
-      &:focus {
-        border-bottom-color: $blue;
-      }
-    }
-    &:first-child {
-    }
-    &:last-child {
-    }
-    ul.sub-menu,
-    ul.children {
-      li {
-        a {
-          padding-left: 30px;
-          &:hover,
-          &:focus {
-          }
-          &:link {
-          }
-        }
-        &:first-child {
-        }
-        &:last-child {
-        }
-      }
-    }
-  }
-  /* end .menu li */
-  /* highlight current page */
-  li.current-menu-item,
-  li.current_page_item,
-  li.current_page_ancestor {
-    a {
-    }
-  }
-  /* end current highlighters */
-}
-
-/* end .nav */
-
-/*********************
 POSTS & CONTENT STYLES
 *********************/
 
@@ -292,7 +237,7 @@ html {
 }
 
 body {
-  font-family: $lato;
+  font-family: $main;
   line-height: 1.5;
   color: $black;
   background-color: $white;
@@ -317,6 +262,131 @@ body {
       background-color: transparent;
       color: $black;
     }
+  }
+}
+
+/****************************
+Header Section
+****************************/
+
+.header {
+  background-color: $primary;
+  padding: 2rem 0;
+}
+
+#inner-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 1rem;
+}
+
+.header-left,
+.header-right {
+  width: 100%;
+  text-align: center;
+}
+
+#logo {
+  width: 100%;
+  max-width: 295px;
+  margin: 0;
+}
+
+// Nav styles
+
+.nav {
+  border-bottom: 0;
+  margin: 0;
+  li {
+    a {
+      display: block;
+      color: $white;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 15px;
+      padding: 0.75em;
+      border-bottom: 2px solid transparent;
+      transition: all 0.3s ease-in-out;
+      &:hover,
+      &:focus {
+        border-bottom-color: $blue;
+      }
+    }
+    &:first-child {
+    }
+    &:last-child {
+    }
+    ul.sub-menu,
+    ul.children {
+      li {
+        a {
+          padding-left: 30px;
+          &:hover,
+          &:focus {
+          }
+          &:link {
+          }
+        }
+        &:first-child {
+        }
+        &:last-child {
+        }
+      }
+    }
+  }
+  /* end .menu li */
+  /* highlight current page */
+  li.current-menu-item,
+  li.current_page_item,
+  li.current_page_ancestor {
+    a {
+    }
+  }
+  /* end current highlighters */
+}
+
+/* end .nav */
+
+// Banner section
+.banner {
+  padding: 0 0 0.5rem;
+  .inner-banner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content {
+    text-align: center;
+    color: $white;
+    width: 100%;
+    text-shadow: 1px 1px 1px $black;
+  }
+
+  .title {
+    font-size: 35px;
+    font-weight: 300;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    line-height: 60px;
+  }
+
+  .text {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+  }
+
+  .img {
+    display: none;
+    width: 100%;
+  }
+
+  .image {
+    width: 100%;
+    max-width: 500px;
   }
 }
 
