@@ -18,13 +18,16 @@ LINK STYLES
 
 a,
 a:visited {
-  color: $blue;
+  // color: $blue;
   /* on click */
   &:active {
   }
   /* mobile tap color */
   &:link {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+  }
+  &:hover {
+    transform: scale(0.95);
   }
 }
 
@@ -387,6 +390,57 @@ Header Section
   .image {
     width: 100%;
     max-width: 500px;
+  }
+}
+
+/****************************
+Home Section
+****************************/
+.home {
+  .box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  .home-content,
+  .home-image {
+    width: 100%;
+  }
+
+  .home-image {
+    text-align: center;
+    .img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      margin: 0;
+    }
+  }
+
+  .home-content {
+    font-size: 17px;
+    margin-top: 1rem;
+  }
+
+  .link {
+    display: inline-block;
+    color: $secondary;
+    border: 2px solid $primary;
+    padding: 8px 24px;
+    border-radius: 5px;
+    background: $white;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 1rem;
+    box-shadow: 1px 1px 7px $black;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background: $primary;
+      text-decoration: none;
+      color: $white;
+    }
   }
 }
 

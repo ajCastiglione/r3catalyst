@@ -139,6 +139,22 @@ Header section
   }
 }
 
+/****************************
+Home Section
+****************************/
+.home {
+  .box {
+    justify-content: space-between;
+  }
+
+  .home-image {
+    text-align: left;
+    .img {
+      max-height: 400px;
+    }
+  }
+}
+
 /*********************
 SIDEBARS & ASIDES
 *********************/

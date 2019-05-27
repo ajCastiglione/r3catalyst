@@ -21,13 +21,16 @@
 								</header> -->
 
 								<section class="entry-content cf" itemprop="articleBody">
-									<div class="image">
-										<?php $img = get_field('content_image'); if(!empty($img)) : ?>
-											<img src="<?php echo $img['url'];?>" alt="<?php echo $img['alt'];?>" class="img">
-										<?php endif;?>
-									</div>
-									<div class="content">
-										<?php the_content(); ?>
+									<div class="box">
+										<div class="home-image">
+											<?php $img = get_field('content_image'); if(!empty($img)) : ?>
+												<img src="<?php echo $img['url'];?>" alt="<?php echo $img['alt'];?>" class="img">
+											<?php endif;?>
+										</div>
+										<div class="home-content">
+											<?php the_content(); ?>
+											<a class="link" href="<?php echo get_field('cta_link'); ?>"><?php echo get_field('cta_text'); ?></a>
+										</div>
 									</div>
 								</section>
 
