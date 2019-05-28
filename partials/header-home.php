@@ -1,4 +1,4 @@
-<div class="section banner">
+<div class="banner">
   <div class="inner-banner large-wrapper">
     <div class="content">
       <h1 class="title"><?php echo get_field('b_title', 'options'); ?></h1>

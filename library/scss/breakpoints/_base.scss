@@ -18,7 +18,7 @@ LINK STYLES
 
 a,
 a:visited {
-  // color: $blue;
+  color: $primary;
   /* on click */
   &:active {
   }
@@ -293,8 +293,18 @@ Header Section
   padding: 2rem 0;
 }
 
-.home .header {
-  background-color: $primary;
+.home,
+.page-id-13 {
+  .header {
+    background-color: $primary;
+  }
+}
+
+.home,
+.page-id-13 {
+  #inner-header {
+    border-bottom: 1px solid $white;
+  }
 }
 
 #inner-header {
@@ -303,6 +313,7 @@ Header Section
   align-items: center;
   justify-content: center;
   padding: 0 0 1rem;
+  border-bottom: 1px solid $primary;
 }
 
 .header-left,
@@ -319,12 +330,22 @@ Header Section
 
 // Nav styles
 
-.home .nav {
-  li {
-    a {
-      color: $white;
-      &:hover,
-      &:focus {
+.home,
+.page-id-13 {
+  .nav {
+    li {
+      a {
+        color: $white;
+        &:hover,
+        &:focus {
+          border-bottom-color: $secondary;
+        }
+      }
+    }
+    li.current-menu-item,
+    li.current_page_item,
+    li.current_page_ancestor {
+      a {
         border-bottom-color: $secondary;
       }
     }
@@ -426,6 +447,30 @@ Header Section
   .image {
     width: 100%;
     max-width: 500px;
+  }
+}
+
+// About header
+.header-about {
+  padding-top: 2rem;
+  .title,
+  .subtitle {
+    color: $white;
+    margin: 0;
+    text-align: center;
+    font-weight: 300;
+    font-size: 35px;
+  }
+  .subtitle {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 18px;
+  }
+  .content {
+    text-align: center;
+    font-size: 16px;
+    max-width: 1100px;
+    margin: auto;
   }
 }
 
@@ -796,6 +841,204 @@ Education Section
       }
       .content {
         font-size: 16px;
+      }
+    }
+  }
+}
+
+/****************************
+Why Section
+****************************/
+.why-real-estate {
+  .section {
+    padding: 0 1rem;
+  }
+
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  .content {
+    font-size: 16px;
+  }
+
+  .phrase {
+    max-width: 550px;
+    color: $primary;
+    font-size: 18px;
+  }
+}
+
+/****************************
+About Section
+****************************/
+.page-id-13 {
+  .page-title {
+    display: none;
+  }
+  #content {
+    margin-top: 0;
+  }
+  .entry-content {
+    padding: 0;
+  }
+  .page {
+    margin: 0;
+  }
+}
+.about {
+  position: relative;
+  padding: 2rem 0;
+  .title {
+    color: $primary;
+    font-size: 35px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 0;
+  }
+  .content {
+    text-align: center;
+    font-size: 17px;
+  }
+
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    padding: 2rem 0;
+
+    .member {
+      width: 100%;
+      padding: 0 1rem;
+      margin: 1rem 0;
+
+      .img {
+        margin: 0;
+      }
+      .mtitle {
+        color: $primary;
+        margin: 10px 0 0;
+        font-size: 20px;
+      }
+      .position {
+        margin: 0.5rem 0 1rem;
+        font-size: 14px;
+      }
+      .bio {
+        font-size: 15px;
+      }
+      .button {
+        display: inline-block;
+        margin: 10px 0;
+        background-color: $primary;
+        border: 1px solid $primary;
+        color: $secondary;
+        padding: 0.5rem 1.5rem;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-weight: bold;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          background-color: transparent;
+          text-decoration: none;
+        }
+      }
+    }
+    .socials {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      .icon {
+        padding: 10px 14px;
+        color: $gray;
+        transition: all 0.3s ease-in-out;
+        i {
+          font-size: 22px;
+          transition: all 0.3s ease-in-out;
+        }
+        &:hover {
+          background: rgba(0, 0, 0, 0.1);
+          i {
+            color: $primary;
+          }
+        }
+      }
+    }
+
+    .member-single {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 5;
+      background-color: rgba(0, 0, 0, 0.65);
+
+      .inner-single {
+        position: fixed;
+        top: 50%;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        background-color: $secondary;
+        max-width: 95%;
+        max-height: calc(100% - 120px);
+        transform: translateY(-50%);
+        padding: 2rem 1rem;
+        text-align: center;
+        z-index: 1010;
+        overflow-y: auto;
+
+        .close {
+          position: absolute;
+          top: 15px;
+          right: 25px;
+          i {
+            font-size: 30px;
+            color: $white;
+            z-index: 99;
+          }
+        }
+
+        .flex {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+          padding: 1rem;
+        }
+        .image {
+          width: 100%;
+        }
+
+        .mscontent {
+          width: 100%;
+          color: $white;
+          .flex {
+            justify-content: center;
+            padding: 0;
+          }
+          .socials i {
+            color: $primary;
+          }
+        }
+        .mstitle {
+          color: $primary;
+          font-size: 24px;
+          margin: 0;
+        }
+        .msposition {
+          color: $primary;
+          margin: 12px 0;
+        }
       }
     }
   }

@@ -14,14 +14,6 @@ LAYOUT & GRID STYLES
 Header section
 *********************/
 
-.home #inner-header {
-  border-bottom: 1px solid $white;
-}
-
-#inner-header {
-  border-bottom: 1px solid $primary;
-}
-
 .header-left {
   padding-bottom: 1rem;
 }
@@ -142,6 +134,16 @@ Header section
   }
 }
 
+// About header
+.header-about {
+  .title {
+    font-size: 45px;
+  }
+  .subtitle {
+    font-size: 22px;
+  }
+}
+
 /****************************
 Home Section
 ****************************/
@@ -195,5 +197,49 @@ SIDEBARS & ASIDES
 }
 
 /****************************
-Education Section
+Why Section
 ****************************/
+.why-real-estate {
+  padding: 1rem 0 4rem;
+  .flex {
+    justify-content: space-between;
+  }
+
+  .content,
+  .image {
+    width: 50%;
+    padding: 0 1rem;
+  }
+  .image {
+    text-align: right;
+    img {
+      width: auto;
+      height: 100%;
+      max-height: 320px;
+      object-fit: cover;
+      margin: 0;
+    }
+  }
+}
+
+/****************************
+About Section
+****************************/
+.about {
+  .title {
+    font-size: 45px;
+  }
+
+  .team {
+    justify-content: space-between;
+
+    .member {
+      width: 48%;
+    }
+
+    .member-single {
+      .inner-single {
+      }
+    }
+  }
+}

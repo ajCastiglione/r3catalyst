@@ -7,7 +7,7 @@ const image = require("gulp-image");
 const bs = require("browser-sync");
 
 const scss = ["library/scss/*/*.scss"];
-const all = ["library/*.php", "*.php", "*/*.php"];
+const all = ["library/*.php", "*.php", "*/*.php", "library/js/*.js"];
 
 //Compile scss
 gulp.task("compile", () => {

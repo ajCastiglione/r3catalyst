@@ -67,3 +67,32 @@ Education Section
     }
   }
 }
+
+/****************************
+About Section
+****************************/
+.about {
+  .title {
+    font-size: 50px;
+  }
+
+  .team {
+    .member-single {
+      .inner-single {
+        text-align: left;
+        .image {
+          width: 40%;
+        }
+        .mscontent {
+          width: 60%;
+          .flex {
+            justify-content: space-between;
+          }
+        }
+        .msbio {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
