@@ -243,3 +243,21 @@ About Section
     }
   }
 }
+
+/****************************
+Blog Section
+****************************/
+
+// Blog page
+.blog {
+  .title {
+    font-size: 45px;
+  }
+}
+.posts {
+  justify-content: space-between;
+  .post {
+    width: 50%;
+    padding: 0.5rem 1rem;
+  }
+}

@@ -16,11 +16,11 @@
           </div>
           <a href="#" class="button" data-person="<?php echo strtr(explode(' ',trim(get_sub_field('name')))[0], array('.' => '')); ?>">learn more</a>
           <div class="socials">
-            <?php if(have_rows('socials')) : while(have_rows('socials')) : the_row(); ?>
+            <?php /* if(have_rows('socials')) : while(have_rows('socials')) : the_row(); ?>
               <a href="<?php echo get_sub_field('url');?>" class="icon" target="_blank">
                 <?php echo get_sub_field('icon'); ?>
               </a>
-            <?php endwhile; endif; ?>
+            <?php endwhile; endif; */ ?>
           </div>
         </div>
         <!-- Single view -->
@@ -37,11 +37,11 @@
                 <div class="flex">
                 <h4 class="msposition"><?php echo get_sub_field('position'); ?></h4>
                   <div class="socials">
-                    <?php if(have_rows('socials')) : while(have_rows('socials')) : the_row(); ?>
+                    <?php /* if(have_rows('socials')) : while(have_rows('socials')) : the_row(); ?>
                       <a href="<?php echo get_sub_field('url');?>" class="icon" target="_blank">
                         <?php echo get_sub_field('icon'); ?>
                       </a>
-                    <?php endwhile; endif; ?>
+                    <?php endwhile; endif; */ ?>
                   </div>
                 </div>
                 <div class="msbio">

@@ -60,7 +60,7 @@
 
 				<div class="header-left">
 					<a href="<?php echo home_url(); ?>" rel="nofollow">
-						<img src="<?php if(is_page(2) || is_page(13)) : echo get_template_directory_uri().'/library/images/logo.png'; else : echo get_template_directory_uri().'/library/images/logo_internal.png'; endif; ?>" id="logo" class="h1" itemscope itemtype="http://schema.org/Organization">
+						<img src="<?php if(is_page(2) || is_page(13) || is_home()) : echo get_template_directory_uri().'/library/images/logo.png'; else : echo get_template_directory_uri().'/library/images/logo_internal.png'; endif; ?>" id="logo" class="h1" itemscope itemtype="http://schema.org/Organization">
 					</a>
 				</div>
 
@@ -86,5 +86,6 @@
 
 			<?php if(is_page(2)) : get_template_part('partials/header', 'home'); endif; ?>
 			<?php if(is_page(13)) : get_template_part('partials/header', 'about'); endif; ?>
+			<?php if(is_home()) : get_template_part('partials/header', 'blog'); endif; ?>
 
 		</header>

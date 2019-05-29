@@ -96,3 +96,22 @@ About Section
     }
   }
 }
+
+/****************************
+Blog Section
+****************************/
+.blog-header {
+  .flex {
+    justify-content: space-between;
+  }
+  .top {
+    width: 60%;
+  }
+  .title {
+    font-size: 45px;
+  }
+  .bottom {
+    width: 40%;
+    text-align: right;
+  }
+}
