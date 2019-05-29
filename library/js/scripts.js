@@ -86,6 +86,12 @@ function showFullBio($) {
   });
 }
 
+function wrapForm($) {
+  let fields = $(".gfield");
+  fields.not(":last").wrapAll('<div class="inputs"/>');
+  fields.last().wrap('<div class="message"/>');
+}
+
 /*
  * Put all your regular jQuery in here.
  */
@@ -93,5 +99,8 @@ jQuery(document).ready(function($) {
   if ($("body").hasClass("page-id-13")) {
     aboutLimit($);
     showFullBio($);
+  }
+  if ($("body").hasClass("page-id-17")) {
+    wrapForm($);
   }
 }); /* end of as page load scripts */

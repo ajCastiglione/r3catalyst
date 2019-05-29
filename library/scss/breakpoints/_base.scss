@@ -1048,6 +1048,94 @@ About Section
 }
 
 /****************************
+Contact Page Section
+****************************/
+.page-contact-title {
+  margin-bottom: 1rem;
+}
+
+.contact {
+  padding: 0 1rem 5rem;
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+  }
+  .left,
+  .right {
+    width: 100%;
+  }
+  .content {
+    font-size: 18px;
+    margin-top: 1rem;
+    line-height: 35px;
+    a {
+      color: $black;
+    }
+  }
+  .form-title {
+    font-size: 25px;
+    font-weight: bold;
+    max-width: 500px;
+  }
+  .form {
+    .gform_body {
+      .gform_fields {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: center;
+      }
+      input[type="text"],
+      select {
+        max-width: 100%;
+        width: 100% !important;
+      }
+      .inputs {
+        width: 100%;
+        input,
+        select {
+          border: 2px solid $primary;
+          border-radius: 30px;
+          padding: 5px;
+          background: $white;
+          padding: 5px 10px;
+          min-height: 50px;
+        }
+      }
+      .message {
+        width: 100%;
+        textarea {
+          border: 2px solid $primary;
+          border-radius: 10px;
+          padding: 5px;
+          background: $white;
+          padding: 5px 10px;
+        }
+      }
+    }
+    .gform_footer {
+      margin-top: 0;
+      text-align: right;
+      input[type="submit"] {
+        background-color: $primary;
+        color: $secondary;
+        border: 1px solid $primary;
+        padding: 1rem 3rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          background-color: transparent;
+          transform: scale(0.95);
+        }
+      }
+    }
+  }
+}
+
+/****************************
 Blog Section
 ****************************/
 .blog-header {

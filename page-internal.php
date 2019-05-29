@@ -17,13 +17,14 @@
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
 								<header class="article-header large-wrapper">
-									<h1 class="page-title"><?php the_title(); ?></h1>
+									<h1 class="page-title page-<?php global $post; echo $post->post_name; ?>-title"><?php the_title(); ?></h1>
 								</header>
 
 								<section class="entry-content cf" itemprop="articleBody">
 									<?php if(is_page(9)) : get_template_part('partials/education', 'content'); endif; ?>
 									<?php if(is_page(11)) : get_template_part('partials/why', 'content'); endif; ?>
 									<?php if(is_page(13)) : get_template_part('partials/about', 'content'); endif; ?>
+									<?php if(is_page(17)) : get_template_part('partials/contact', 'content'); endif; ?>
 								</section>
 
 							</article>

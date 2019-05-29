@@ -98,6 +98,23 @@ About Section
 }
 
 /****************************
+Contact Section
+****************************/
+
+.contact {
+  .form {
+    .gform_body {
+      .inputs {
+        width: 40%;
+      }
+      .message {
+        width: 60%;
+      }
+    }
+  }
+}
+
+/****************************
 Blog Section
 ****************************/
 .blog-header {
