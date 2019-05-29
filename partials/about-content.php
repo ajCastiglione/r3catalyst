@@ -17,12 +17,13 @@
           <a href="#" class="button" data-person="<?php echo strtr(explode(' ',trim(get_sub_field('name')))[0], array('.' => '')); ?>">learn more</a>
           <div class="socials">
             <?php if(have_rows('socials')) : while(have_rows('socials')) : the_row(); ?>
-              <a href="<?php echo get_sub_field('url');?>" class="icon">
+              <a href="<?php echo get_sub_field('url');?>" class="icon" target="_blank">
                 <?php echo get_sub_field('icon'); ?>
               </a>
             <?php endwhile; endif; ?>
           </div>
         </div>
+        <!-- Single view -->
         <?php $data = strtr(explode(' ',trim(get_sub_field('name')))[0], array('.' => '')); ?>
         <div class="member-single" id="<?php echo $data  ?>">
           <div class="inner-single">
@@ -37,7 +38,7 @@
                 <h4 class="msposition"><?php echo get_sub_field('position'); ?></h4>
                   <div class="socials">
                     <?php if(have_rows('socials')) : while(have_rows('socials')) : the_row(); ?>
-                      <a href="<?php echo get_sub_field('url');?>" class="icon">
+                      <a href="<?php echo get_sub_field('url');?>" class="icon" target="_blank">
                         <?php echo get_sub_field('icon'); ?>
                       </a>
                     <?php endwhile; endif; ?>
