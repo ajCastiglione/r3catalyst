@@ -52,9 +52,9 @@ Footer Section
 .footer {
   .footer-item {
     width: 33%;
-    &:nth-child(4),
-    &:nth-child(5) {
-      width: 50%;
+    &:nth-child(4) {
+      width: 100%;
+      margin-top: 1rem;
     }
   }
 }

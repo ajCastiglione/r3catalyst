@@ -17,7 +17,10 @@
     <div class="timeline large-wrapper section">
       <h2 class="title"><?php echo get_field('timeline_title'); ?></h2>
       <p class="text"><?php echo get_field('timeline_text'); ?></p>
-      <?php echo do_shortcode('[cool-timeline layout="horizontal" category="timeline-stories" skin="dark" designs="design-2" show-posts="20" order="ASC" items="3" icons="YES" story-content="full" date-format="default" based="custom" autoplay="false" start-on="0"]'); ?>
+    </div>
+    <div class="text-center">
+      <?php $timeline = get_field('timeline_image'); if(!empty($timeline)) : echo "<a href='$timeline[url]' class='foobox'><img src='$timeline[url]' class='timeline-image'></a>"; endif; 
+        # echo do_shortcode('[cool-timeline layout="horizontal" category="timeline-stories" skin="dark" designs="design-2" show-posts="20" order="ASC" items="3" icons="YES" story-content="full" date-format="default" based="custom" autoplay="false" start-on="0"]'); ?>
     </div>
   </section>
 

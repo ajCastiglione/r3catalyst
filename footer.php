@@ -20,16 +20,15 @@
 							)); ?>
 						</nav>
 					</div>
-					<div class="footer-news footer-item">
+					<!-- <div class="footer-news footer-item">
 						<h3>Subscribe to our newsletter</h3>
 						<div class="dummy-fields">
 							<input type="text" name="email" id="email" placeholder="Email Address">
 							<input type="submit" value="ok">
 						</div>
-					</div>
+					</div> -->
 					<div class="footer-links footer-item">
-						<p>Securities offered through Chalice Capital <br> Partners, LLC | Member <a href="http://www.finra.com/">FINRA</a> / <a href="http://www.sipc.org/">SIPC</a></p>
-						<p>Check the background of this firm on <br> <a href="http://brokercheck.finra.org/">FINRA’s BrokerCheck</a></p>
+						<?php echo get_field('securities', 'options'); ?>
 					</div>
 
 				</div>

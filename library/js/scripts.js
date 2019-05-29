@@ -46,15 +46,15 @@ function aboutLimit($) {
     // Remove all text from the current bio
     container.empty();
     // How many words should show in the exceprt
-    let limit = 29;
+    let limit = 160;
     // Create array from text
-    let wordArr = text.split(" ");
+    // let wordArr = text.split(" ");
     // Truncate the array based on the limit above
-    let newArr = wordArr.slice(0, limit);
+    let newText = text.substring(0, limit);
     // Create the new string
-    let newBio = newArr.join(" ");
+    // let newBio = newArr.join(" ");
     // Return the HTML for the short bios
-    container.html(`<p>${newBio}...</p>`);
+    container.html(`<p>${newText}...</p>`);
   });
 }
 
