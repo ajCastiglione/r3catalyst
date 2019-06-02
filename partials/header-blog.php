@@ -2,9 +2,9 @@
   <div class="large-wrapper">
     <div class="flex">
       <div class="top">
-      <h2 class="title">Press</h2>
+      <h2 class="title"><?php echo get_field('page_title', get_option('page_for_posts')); ?></h2>
       <div class="content">
-        <p>Our partners actively influence the real estate sector and have deep experience understanding and analyzing both opportunity zones and direct investment transactions. They are frequent guest speakers at many industry events.</p>
+        <p><?php echo get_field('content', get_option('page_for_posts')); ?></p>
       </div>
       </div>
       <div class="bottom">

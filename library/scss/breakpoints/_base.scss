@@ -514,7 +514,7 @@ Home Section
     color: $secondary;
     border: 2px solid $primary;
     padding: 8px 24px;
-    border-radius: 5px;
+    border-radius: 30px;
     background: $white;
     text-transform: uppercase;
     font-size: 14px;
@@ -660,7 +660,7 @@ Education Section
   // timeline section
   .middle {
     margin-top: 3.5rem;
-    background-color: $primary;
+    background-color: $purple;
 
     .timeline {
       color: $white;
@@ -674,7 +674,6 @@ Education Section
       }
       .text {
         text-align: center;
-        color: $black;
         font-size: 16px;
         margin-bottom: 1.5rem;
       }
@@ -715,7 +714,7 @@ Education Section
     margin-top: 4rem;
     .table {
       .title {
-        color: $primary;
+        color: $secondary;
         font-size: 40px;
         text-align: center;
         font-weight: 300;
@@ -774,7 +773,7 @@ Education Section
     margin-top: 4rem;
 
     .title {
-      color: $primary;
+      color: $secondary;
       font-size: 40px;
       font-weight: 300;
       text-align: center;
@@ -943,7 +942,7 @@ About Section
         border: 1px solid $primary;
         color: $secondary;
         padding: 0.5rem 1.5rem;
-        border-radius: 5px;
+        border-radius: 30px;
         text-transform: uppercase;
         font-weight: bold;
         transition: all 0.3s ease-in-out;
@@ -1067,6 +1066,11 @@ Contact Page Section
   .left,
   .right {
     width: 100%;
+    padding: 0 1rem;
+  }
+  .img {
+    max-width: 400px;
+    width: 100%;
   }
   .content {
     font-size: 18px;
@@ -1077,7 +1081,7 @@ Contact Page Section
     }
   }
   .form-title {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
     max-width: 500px;
   }
@@ -1131,6 +1135,7 @@ Contact Page Section
         font-weight: bold;
         text-transform: uppercase;
         transition: all 0.3s ease-in-out;
+        border-radius: 30px;
         &:hover {
           background-color: transparent;
           transform: scale(0.95);
@@ -1178,7 +1183,7 @@ Blog Section
 // Blog page
 .blog {
   .title {
-    color: $primary;
+    color: $secondary;
     font-weight: 300;
     font-size: 35px;
   }

@@ -17,7 +17,7 @@
 
 										<h1 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
 										<p class="byline entry-meta vcard">
-												<a href="<?php echo the_permalink(); ?>" class="readmore"><i class="fas fa-globe"></i> Read More</a>
+												<!-- <a href="<?php # echo the_permalink(); ?>" class="readmore"><i class="fas fa-globe"></i> Read More</a> -->
 												<?php printf( __( '<i class="fas fa-clock"></i>', 'bonestheme' ).' %1$s %2$s',
 														// the time the post was published 
 														'<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time(get_option('date_format')) . '</time>',
