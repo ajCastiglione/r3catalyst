@@ -41,7 +41,7 @@ function aboutLimit($) {
   $.each(member, (idx, el) => {
     let container = $(el).children(".bio");
     let bio = $(el).find("p");
-    let text = bio.text();
+    let text = bio.html();
 
     // Remove all text from the current bio
     container.empty();
