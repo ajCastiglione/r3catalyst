@@ -6,7 +6,7 @@
 
 						<main id="main" class="cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
-						<h1 class="title">Recent Events:</h1>
+						<h1 class="title">Recent Events</h1>
 
 							<div class="posts">
 								<?php if (have_posts()) : while (have_posts()) : the_post(); ?>

@@ -241,6 +241,26 @@ About Section
 }
 
 /****************************
+Education Section
+****************************/
+.education {
+  .table-section {
+    .table {
+      .title {
+        font-size: 45px;
+      }
+    }
+  }
+  .case-studies-section {
+    margin-top: 4rem;
+
+    .title {
+      font-size: 45px;
+    }
+  }
+}
+
+/****************************
 Contact Page Section
 ****************************/
 .page-contact-title {
@@ -266,7 +286,7 @@ Blog Section
 // Blog page
 .blog {
   .title {
-    font-size: 45px;
+    // font-size: 45px;
   }
 }
 .posts {
