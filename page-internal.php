@@ -21,10 +21,10 @@
 								</header>
 
 								<section class="entry-content cf" itemprop="articleBody">
-									<?php if(is_page(9)) : get_template_part('partials/education', 'content'); endif; ?>
-									<?php if(is_page(11)) : get_template_part('partials/why', 'content'); endif; ?>
-									<?php if(is_page(13)) : get_template_part('partials/about', 'content'); endif; ?>
-									<?php if(is_page(17)) : get_template_part('partials/contact', 'content'); endif; ?>
+									<?php if(is_page(9)) : get_template_part('partials/content', 'education'); endif; ?>
+									<?php if(is_page(11)) : get_template_part('partials/content', 'why'); endif; ?>
+									<?php if(is_page(13)) : get_template_part('partials/content', 'about'); endif; ?>
+									<?php if(is_page(17)) : get_template_part('partials/content', 'contact'); endif; ?>
 								</section>
 
 							</article>
