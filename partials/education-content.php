@@ -48,7 +48,7 @@
           <?php endwhile; endif; ?>
         </div>
         <div class="image">
-          <?php $img=get_field('case_studies_image'); if(!empty($img)) : echo "<img src='$img[url]'>"; endif; ?>
+          <?php $img=get_field('case_studies_image'); if(!empty($img)) : echo "<img src='$img[url]' class='img'>"; endif; ?>
         </div>
       </div>
       <div class="table">
