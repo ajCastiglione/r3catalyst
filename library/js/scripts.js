@@ -92,6 +92,13 @@ function wrapForm($) {
   fields.last().wrap('<div class="message"/>');
 }
 
+function removeClickingAbility($) {
+  let post = $(".post");
+  post.on("click", "a", function(e) {
+    e.preventDefault();
+  });
+}
+
 /*
  * Put all your regular jQuery in here.
  */
@@ -102,5 +109,8 @@ jQuery(document).ready(function($) {
   }
   if ($("body").hasClass("page-id-17")) {
     wrapForm($);
+  }
+  if ($("body").hasClass("blog")) {
+    removeClickingAbility($);
   }
 }); /* end of as page load scripts */
